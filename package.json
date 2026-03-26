@@ -1,0 +1,47 @@
+{
+  "name": "cathedral-memory",
+  "version": "1.0.0",
+  "description": "Persistent memory for AI agents — JavaScript/TypeScript client for Cathedral",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node scripts/fix-cjs.js",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "memory",
+    "cathedral",
+    "persistent-memory",
+    "llm",
+    "langchain",
+    "autogen"
+  ],
+  "author": "Cathedral <hello@cathedral-ai.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathedral-ai/cathedral-js"
+  },
+  "homepage": "https://cathedral-ai.com",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
