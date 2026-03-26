@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cathedral-ai/cathedral-js"
+    "url": "git+https://github.com/AILIFE1/cathedral-ai-cathedral-js-.git"
   },
   "homepage": "https://cathedral-ai.com",
   "engines": {
